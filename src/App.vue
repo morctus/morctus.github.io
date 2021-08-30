@@ -3,16 +3,19 @@
     <Header title="A GAME OF THRONES"/>
     <Tasks @delete-task="deleteTask" :tasks="tasks"/>
   </div>
+  <Footer />
 </template>
 
 <script>
 import Header from './components/Header'
 import Tasks from './components/Tasks'
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
   components: {
     Header,
+    Footer,
     Tasks
   },
   data() {
